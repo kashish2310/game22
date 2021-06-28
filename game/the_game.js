@@ -90,7 +90,7 @@ function drawBricks(){
                 bricks[c][r].y=brickY;
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                ctx.fillStyle = '#8500cc';
+                ctx.fillStyle = 'brown';
                 ctx.fill();
                 ctx.closePath();
             }
@@ -100,7 +100,7 @@ function drawBricks(){
 //Create function to keep track of score
 function drawScore(){
     ctx.font = '20px monospace';
-    ctx.fillStyle = 'brown';
+    ctx.fillStyle = 'red';
     ctx.fillText('score: '+ score, 8, 20); //position score at 8,20 on the x,y axis of the canvas
 }
 
